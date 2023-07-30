@@ -95,7 +95,7 @@ for i in range(1000):
     print("Input: \n" + str(X))
     print("Actual Output: \n" + str(y))
     print("Predicted Output: \n" + str(nn.forward(X)))
-    print("Loss: \n" + str(torch.mean(y - nn.forward(X))))
+    print("Loss: \n" + str(np.mean(y - nn.forward(X))))
     print("\n")
     nn.train(X, y)
 
