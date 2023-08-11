@@ -6,6 +6,12 @@ import torch.utils.data as data
 import math
 import copy
 
+if torch.cuda.is_available():
+    print("Using CUDA")
+    # Your code for using CUDA when CUDA is available
+else:
+    print("CUDA is not available, using CPU")
+    # Your code for using CPU when CUDA is not available
 
 
 
